@@ -266,289 +266,11 @@ div#full-blog {
   margin: 10px auto 65px;
 }
 
-.brenta-thumb {
+.webmapp-child-theme-thumb {
   background: no-repeat;
   background-position: center;
   background-size: cover;
 }
-
-/* FACCETTE */
-
-.facetwp-loading {
-  display: block;
-  margin: 0 auto;
-}
-
-body.home .facetwp-radio,
-body.single-project .facetwp-radio
-{
-  width: 25%;
-  height: 60px;
-  padding-left: 0;
-  padding-top: 46px;
-  display: inline-block;
-  background-position: top center;
-  color: #fff;
-  font-size: 12px;
-  margin-top: 20px;
-}
-
-body.home .facetwp-radio.checked:before,
-body.single-project .facetwp-radio.checked:before
-{
-  content: '';
-  display: block;
-  height: 50px;
-  margin: 0 auto;
-  width: 50px;
-  border-radius: 54px;
-  margin-top: -60px;
-}
-
-body.home .facetwp-radio .facetwp-counter,
-body.single-project .facetwp-radio .facetwp-counter
-{
-  display: none;
-}
-
-.facetwp-facet {
-  min-height: 85px;
-  margin-bottom: 10px!important;
-}
-
-.brenta-facet {
-  color: #023f50;
-  width: 25%;
-  display: inline-block;
-  text-align: center;
-}
-
-body.single-project .facetwp-facet {
-  width: 35%;
-  display: inline-block;
-  vertical-align: middle;
-  text-align: center;
-}
-
-.brenta-facet > span.line {
-  display: inline-block;
-  width: 20%;
-  border-top: 1px solid #023f50;
-  vertical-align: middle;
-}
-
-.brenta-facet > span:not(line){
-  padding-left: 6%;
-  padding-right: 6%;
-}
-
-.facetwp-radio[data-value="rendena"], .facetwp-radio.checked[data-value="rendena"] {
-  background: url("img/icone/pioggia.png") no-repeat top center;
-  color: #47b5d1;
-}
-.facetwp-radio[data-value="rendena"]:hover{
-  color: #47b5d1;
-}
-.facetwp-radio.checked[data-value="rendena"]:before{
-  border: 2px dotted #47b5d1;
-}
-
-.facetwp-radio[data-value="altopiano-paganella"], .facetwp-radio.checked[data-value="altopiano-paganella"] {
-  padding-top: 27px!important;
-  background: url("img/icone/pioggia.png") no-repeat top center;
-  color: #47b5d1;
-}
-.facetwp-radio[data-value="altopiano-paganella"]:hover{
-  color: #47b5d1;
-}
-.facetwp-radio.checked[data-value="altopiano-paganella"]:before{
-  border: 2px dotted #47b5d1;
-  margin-top: -42px!important;
-}
-
-.facetwp-radio[data-value="giudicarie"], .facetwp-radio.checked[data-value="giudicarie"] {
-  background: url("img/icone/pioggia.png") no-repeat top center;
-  color: #47b5d1;
-}
-.facetwp-radio[data-value="giudicarie"]:hover{
-  color: #47b5d1;
-}
-.facetwp-radio.checked[data-value="giudicarie"]:before{
-  border: 2px dotted #47b5d1;
-}
-
-.facetwp-radio[data-value="val-di-non-e-val-di-sole"], .facetwp-radio.checked[data-value="val-di-non-e-val-di-sole"] {
-  padding-top: 27px!important;
-  background: url("img/icone/pioggia.png") no-repeat top center;
-  color: #47b5d1;
-}
-.facetwp-radio[data-value="val-di-non-e-val-di-sole"]:hover{
-  color: #47b5d1;
-}
-.facetwp-radio.checked[data-value="val-di-non-e-val-di-sole"]:before{
-  border: 2px dotted #47b5d1;
-  margin-top: -42px!important;
-}
-
-.facetwp-radio[data-value="adulti"], .facetwp-radio.checked[data-value="adulti"] {
-  background: url("img/icone/adulti.png") no-repeat top center;
-  color: #47b5d1;
-}
-.facetwp-radio[data-value="adulti"]:hover{
-  color: #47b5d1;
-}
-.facetwp-radio.checked[data-value="adulti"]:before{
-  border: 2px dotted #47b5d1;
-}
-
-.facetwp-radio[data-value="bambini"], .facetwp-radio.checked[data-value="bambini"] {
-  background: url("img/icone/bambini.png") no-repeat top center;
-  color: #1497b6;
-}
-.facetwp-radio[data-value="bambini"]:hover{
-  color: #1497b6;
-}
-.facetwp-radio[data-value="bambini"]:before{
-  border: 2px dotted #1497b6;
-}
-
-.facetwp-radio[data-value="passeggino"], .facetwp-radio.checked[data-value="passeggino"] {
-  background: url("img/icone/passeggino.png") no-repeat top center;
-  color: #00769b;
-}
-.facetwp-radio[data-value="passeggino"]:hover {
-  color: #00769b;
-}
-.facetwp-radio[data-value="passeggino"]:before {
-  border: 2px dotted #00769b;
-}
-
-.facetwp-radio[data-value="pioggia"], .facetwp-radio.checked[data-value="pioggia"] {
-  background: url("img/icone/pioggia.png") no-repeat top center;
-  color: #07526e;
-}
-.facetwp-radio[data-value="pioggia"]:hover {
-  color: #07526e;
-}
-.facetwp-radio[data-value="pioggia"]:before {
-  border: 2px dotted #07526e;
-}
-
-
-.facetwp-radio[data-value="flora"], .facetwp-radio.checked[data-value="flora"] {
-  background: url("img/icone/flora.png") no-repeat top center;
-  color: #46d090;
-}
-.facetwp-radio[data-value="flora"]:hover {
-  color: #46d090;
-}
-.facetwp-radio[data-value="flora"]:before {
-  border: 2px dotted #46d090;
-}
-
-.facetwp-radio[data-value="fauna"], .facetwp-radio.checked[data-value="fauna"] {
-  background: url("img/icone/fauna.png") no-repeat top center;
-  color: #0eb56d;
-}
-.facetwp-radio[data-value="fauna"]:hover {
-  color: #0eb56d;
-}
-.facetwp-radio[data-value="fauna"]:before {
-  border: 2px dotted #0eb56d;
-}
-
-.facetwp-radio[data-value="geologia"], .facetwp-radio.checked[data-value="geologia"] {
-  background: url("img/icone/geologia.png") no-repeat top center;
-  color: #009a56;
-}
-.facetwp-radio[data-value="geologia"]:hover {
-  color: #009a56;
-}
-.facetwp-radio[data-value="geologia"]:before {
-  border: 2px dotted #009a56;
-}
-
-.facetwp-radio[data-value="paesaggio"], .facetwp-radio.checked[data-value="paesaggio"] {
-  background: url("img/icone/panorama.png") no-repeat top center;
-  color: #026e47;
-}
-.facetwp-radio[data-value="paesaggio"]:hover {
-  color: #026e47;
-}
-.facetwp-radio[data-value="paesaggio"]:before {
-  border: 2px dotted #026e47;
-}
-
-
-.facetwp-radio[data-value="primavera"], .facetwp-radio.checked[data-value="primavera"] {
-  background: url("img/icone/primavera.png") no-repeat top center;
-  color: #f67313;
-}
-.facetwp-radio[data-value="primavera"]:hover {
-  color: #f67313;
-}
-.facetwp-radio[data-value="primavera"]:before {
-  border: 2px dotted #f67313;
-}
-
-.facetwp-radio[data-value="estate"], .facetwp-radio.checked[data-value="estate"] {
-  background: url("img/icone/estate.png") no-repeat top center;
-  color: #d85107;
-}
-.facetwp-radio[data-value="estate"]:hover {
-  color: #d85107;
-}
-.facetwp-radio[data-value="estate"]:before {
-  border: 2px dotted #d85107;
-}
-
-.facetwp-radio[data-value="autunno"], .facetwp-radio.checked[data-value="autunno"] {
-  background: url("img/icone/autunno.png") no-repeat top center;
-  color: #a95219;
-}
-.facetwp-radio[data-value="autunno"]:hover {
-  color: #a95219;
-}
-.facetwp-radio[data-value="autunno"]:before {
-  border: 2px dotted #a95219;
-}
-
-.facetwp-radio[data-value="inverno"], .facetwp-radio.checked[data-value="inverno"] {
-  background: url("img/icone/inverno.png") no-repeat top center;
-  color: #7c3700;
-}
-.facetwp-radio[data-value="inverno"]:hover {
-  color: #7c3700;
-}
-.facetwp-radio[data-value="inverno"]:before {
-  border: 2px dotted #7c3700;
-}
-
-
-.facetwp-radio[data-value="bike"], .facetwp-radio.checked[data-value="bike"] {
-  background: url("img/icone/bike.png") no-repeat top center;
-  color: #14522e;
-}
-.facetwp-radio[data-value="bike"]:hover {
-  color: #14522e;
-}
-.facetwp-radio[data-value="bike"]:before {
-  border: 2px dotted #14522e;
-}
-
-.facetwp-radio[data-value="trekking"], .facetwp-radio.checked[data-value="trekking"] {
-  background: url("img/icone/boot.png") no-repeat top center;
-  color: #14522e;
-}
-.facetwp-radio[data-value="trekking"]:hover {
-  color: #14522e;
-}
-.facetwp-radio[data-value="trekking"]:before {
-  border: 2px dotted #14522e;
-}
-
-
-/* END FACCETTE */
 
 /* HIGHLITS */
 
@@ -780,7 +502,7 @@ footer#main-footer {
   height: 500px;
 }
 
-.brenta-thumb, .iframe {
+.webmapp-child-theme-thumb, .iframe {
   height: 500px;
   width: 100%;
   overflow: hidden;
@@ -846,7 +568,7 @@ footer#main-footer {
 
 /* NEWS */
 
-.single.brenta-thumb {
+.single.webmapp-child-theme-thumb {
   height: 400px;
 }
 
@@ -931,16 +653,16 @@ span.entry-date {
   overflow: hidden;
 }
 
-.brenta-content > .container {
+.webmapp-child-theme-content > .container {
   padding-top: 0px!important;
 }
 
-.brenta-content > .container .single-left {
+.webmapp-child-theme-content > .container .single-left {
   width: 42.5%!important;
   padding-right: 20px;
 }
 
-.brenta-content > .container .right-left {
+.webmapp-child-theme-content > .container .right-left {
   width: 56.3%;
 }
 
@@ -1084,7 +806,7 @@ body.single-project h1.entry-title {
     margin: 0!important;
   }
 
-  .brenta-content > .container .single-left {
+  .webmapp-child-theme-content > .container .single-left {
     width: 100%!important;
     margin: 30px 0 50px!important;
     padding: 0;
@@ -1111,10 +833,6 @@ body.single-project h1.entry-title {
     padding-left: 0;
     padding-right: 0;
     border: none;
-  }
-
-  .brenta-facet {
-    width: 100%!important;
   }
 
   .et_pb_fullwidth_portfolio .et_pb_portfolio_item {
@@ -1154,147 +872,4 @@ body.single-project h1.entry-title {
     max-width: 100%!important;
     height: 350px!important;
   }
-}
-
-body #page-container .booking-button.et_pb_button_0:hover, body #page-container .booking-button.et_pb_button_0 {
-  background: #007757 !important;
-  text-align: center;
-  margin: 0 auto;
-  display: block;
-}
-
-/* FORM */
-.wpcf7 {
-  text-align: center;
-}
-
-.wpcf7 input, .wpcf7 textarea {
-  width: 100%;
-  padding: 16px;
-  border: none;
-  -webkit-border-radius: 0;
-  -moz-border-radius: 0;
-  border-radius: 0;
-  color: #999;
-  background-color: #eee;
-  font-size: 14px;
-}
-
-#brenta_login input {
-  width: 38%;
-  height: 40px;
-  padding: 16px;
-  margin-right: 2%;
-  display: inline-block;
-  border: none;
-  -webkit-border-radius: 0;
-  -moz-border-radius: 0;
-  border-radius: 0;
-  color: #999;
-  background-color: #eee;
-  font-size: 14px;
-}
-
-#brenta_login input[type=password]{
-
-}
-
-#brenta_login input[type=submit] {
-  cursor: pointer;
-  padding: 0;
-  background: #333;
-  color: #fff;
-  border-radius: 20px;
-  width: 15%;
-}
-
-.wpcf7 input[type=submit] {
-  cursor: pointer;
-}
-
-.wpcf7 .wpcf7-form > p {
-  width: 100%;
-  margin: 0 auto;
-}
-
-.wpcf7 .wpcf7-form p:nth-child(3),
-.wpcf7 .wpcf7-form p:nth-child(6),
-.wpcf7 .wpcf7-form p:nth-child(8)
-{
-  margin-right: 2%;
-}
-.wpcf7 .wpcf7-form p:nth-child(3),
-.wpcf7 .wpcf7-form p:nth-child(4),
-.wpcf7 .wpcf7-form p:nth-child(6),
-.wpcf7 .wpcf7-form p:nth-child(7),
-.wpcf7 .wpcf7-form p:nth-child(8),
-.wpcf7 .wpcf7-form p:nth-child(9)
-{
-  width: 49%;
-  float: left;
-}
-
-.wpcf7 .wpcf7-form p:nth-child(11){
-  width: 25%;
-}
-
-#modal-form {
-  display: none;
-  position: fixed;
-  width: 70%;
-  z-index: 9999999;
-  top: 10px;
-  left: 16%;
-  height: 790px;
-  background: #fff;
-  color: #333;
-  -webkit-box-shadow: 0px 0px 80px 300px rgba(0,0,0,0.7);
-  -moz-box-shadow: 0px 0px 80px 300px rgba(0,0,0,0.7);
-  box-shadow: 0px 0px 80px 300px rgba(0,0,0,0.7);
-}
-
-#modal-form .wpcf7 {
-  padding: 25px 50px;
-}
-
-#modal-form .booking-close-button {
-  float: right;
-  color: #333;
-  text-transform: uppercase;
-  font-size: 25px;
-  padding: 10px 20px;
-  cursor: pointer;
-}
-
-#modal-form div.wpcf7-validation-errors {
-  border: 2px solid #f7e700;
-  position: absolute;
-  top: -20px;
-  width: 87%;
-}
-
-#breadcrumbs {
-  margin-bottom: 18px;
-}
-
-img#brenta_loader {
-  display: none;
-  margin: 40px auto;
-}
-
-form#brenta_login {
-  margin: 40px 0;
-}
-
-.acf-form > div {
-  margin-top: 40px;
-}
-
-.acf-form input[type="submit"]{
-  cursor: pointer;
-  padding: 10px 30px;
-  font-size: 20px;
-  background: #333;
-  color: #fff;
-  border-radius: 20px;
 }

@@ -75,7 +75,7 @@ $related = array_merge_recursive( $routes, $tracks, $pois );
                         </div> <!-- .entry-content -->
                     </div>
                     <div class="single-left">
-                        <div class="brenta-thumb"
+                        <div class="webmapp-child-theme-thumb"
                              style="background-image: url('<?php print $thumb; ?>');"></div>
                     </div>
                     <div class="single-right">
@@ -101,11 +101,11 @@ $related = array_merge_recursive( $routes, $tracks, $pois );
                             </div>
 						<?php else : ?>
                             <div class="mappa"
-                                 style="background: url('/wp-content/themes/brenta/img/mappa.jpg')">
+                                 style="background: url('/wp-content/themes/webmapp-child-theme/img/mappa.jpg')">
                             </div>
 						<?php endif; ?>
                     </div>
-                    <div class="brenta-content">
+                    <div class="webmapp-child-theme-content">
                         <div class="container">
 							<?php
 							if ( count( $related ) == 1 ) :

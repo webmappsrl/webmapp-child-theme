@@ -31,13 +31,13 @@ get_header();
                         </div> <!-- .entry-content -->
                     </div>
                     <div class="single-left">
-                        <div class="brenta-thumb" style="background-image: url('<?php print $thumb; ?>');"></div>
+                        <div class="webmapp-child-theme-thumb" style="background-image: url('<?php print $thumb; ?>');"></div>
                     </div>
                     <div class="single-right">
-                        <div class="mappa" style="background: url('/wp-content/themes/brenta/img/mappa.jpg')">
+                        <div class="mappa" style="background: url('/wp-content/themes/webmapp-child-theme/img/mappa.jpg')">
                         </div>
                     </div>
-                    <div class="brenta-content">
+                    <div class="webmapp-child-theme-content">
                         <div class="container">
                             <div class="single-left text">
 				                <?php the_content(); ?>

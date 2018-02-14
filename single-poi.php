@@ -46,7 +46,7 @@ get_header();
                         </div> <!-- .entry-content -->
                     </div>
                     <div class="single-left text">
-                        <div class="brenta-thumb" style="background-image: url('<?php print $thumb; ?>');"></div>
+                        <div class="webmapp-child-theme-thumb" style="background-image: url('<?php print $thumb; ?>');"></div>
                     </div>
                     <div class="single-right">
                         <div class="iframe">
@@ -64,18 +64,18 @@ get_header();
                             <div class="single-right">
                                 <?php if(get_field('contact:phone')): ?>
                                 <p><span class="title-acqua"><i class="fa fa-phone"
-                                      aria-hidden="true"></i> <?php echo __( 'Tel', 'brenta' ) ?></span>  <?php the_field('contact:phone');  ?>
+                                      aria-hidden="true"></i> <?php echo __( 'Tel', 'webmapp-child-theme' ) ?></span>  <?php the_field('contact:phone');  ?>
                                 </p>
                                 <hr />
                                 <?php endif; ?>
 	                            <?php if(get_field('contact:email')): ?>
-                                    <p><span class="title-acqua"><i class="fa fa-envelope" aria-hidden="true" style="font-size:16px;vertical-align: baseline;"></i> <?php echo __( 'Mail', 'brenta' ) ?></span>  <?php the_field('contact:email');  ?>
+                                    <p><span class="title-acqua"><i class="fa fa-envelope" aria-hidden="true" style="font-size:16px;vertical-align: baseline;"></i> <?php echo __( 'Mail', 'webmapp-child-theme' ) ?></span>  <?php the_field('contact:email');  ?>
                                     </p>
                                     <hr />
 	                            <?php endif; ?>
                                 <?php if(get_field('opening_hours')): ?>
                                     <p><span class="title-acqua"><i class="fa fa-clock-o"
-                                                                    aria-hidden="true"></i> <?php echo __( 'Orari apertura', 'brenta' ); ?></span>
+                                                                    aria-hidden="true"></i> <?php echo __( 'Orari apertura', 'webmapp-child-theme' ); ?></span>
                                     </p>
                                     <hr />
                                     <p class="details">
@@ -84,7 +84,7 @@ get_header();
                                     <hr />
                                 <?php endif; ?>
 	                            <?php if( get_field('addr:street') || get_field('addr:housenumber') || get_field('addr:postcode') || get_field('addr:city') ): ?>
-                                    <p><span class="title-acqua"><i class="fa fa-map-marker" aria-hidden="true"></i> <?php echo __( 'Indirizzo', 'brenta' ); ?></span>
+                                    <p><span class="title-acqua"><i class="fa fa-map-marker" aria-hidden="true"></i> <?php echo __( 'Indirizzo', 'webmapp-child-theme' ); ?></span>
                                     </p>
                                     <hr />
                                     <p class="details">
@@ -95,7 +95,7 @@ get_header();
 	                            <?php if(get_field('capacity')): ?>
                                     <hr />
                                     <p><span class="title-acqua">
-                                            <i class="fa fa-users" aria-hidden="true"></i> <?php echo __( 'Posti disponibili', 'brenta' ); ?></span>
+                                            <i class="fa fa-users" aria-hidden="true"></i> <?php echo __( 'Posti disponibili', 'webmapp-child-theme' ); ?></span>
                                     </p>
                                     <hr />
                                     <p class="details">

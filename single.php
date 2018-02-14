@@ -51,7 +51,7 @@ $is_page_builder_used = et_pb_is_pagebuilder_used(get_the_ID());
                 $thumbnail = get_thumbnail( $width, $height, $classtext, $titletext, $titletext, FALSE, 'Blogimage' );
                 $thumb     = $thumbnail["thumb"];
                 ?>
-                  <div class="brenta-thumb" style="background-image: url('<?php print $thumb; ?>');"></div>
+                  <div class="webmapp-child-theme-thumb" style="background-image: url('<?php print $thumb; ?>');"></div>
                   <div class="container the_content">
                       <div class="single-left text">
                         <?php
