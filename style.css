@@ -7,11 +7,6 @@ Author URI:     webmapp.it
 Template:       Divi
 Version:        0.1.0
 */
-@import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i,900,900i');
-
-body, html {
-  font-family: 'Montserrat', Helvetica, Arial, Lucida, sans-serif;
-}
 
 header#main-header.et-fixed-header {
   background: #fff;
@@ -872,4 +867,52 @@ body.single-project h1.entry-title {
     max-width: 100%!important;
     height: 350px!important;
   }
+}
+
+/* Griglia responsive per modulo webmapp */
+
+.et_pb_column .et_pb_portfolio_grid .wm-column-1 {
+  width: 100%;
+  clear: both;
+  margin: 0 0 40px 0;
+}
+
+.et_pb_column .et_pb_portfolio_grid .wm-column-2 {
+  width: 47%;
+  margin: 0 6% 40px 0;
+}
+
+.et_pb_column .et_pb_portfolio_grid .wm-column-2:nth-child(even){
+  margin-right: 0;
+}
+
+.et_pb_portfolio_grid .et_pb_portfolio_item h2 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #466434;
+}
+
+.et_pb_portfolio_grid .et_pb_portfolio_item .wm-where {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+}
+
+.et_pb_portfolio_grid .et_pb_portfolio_item .wm-activities {
+  margin-top: -29px;
+  z-index: 999;
+  position: relative;
+  background: rgba(70,100,52, 0.7);
+  color: #fff;
+  float: left;
+  padding: 5px 10px 5px 0px;
+}
+
+.et_pb_portfolio_grid .et_pb_portfolio_item .wm-activities > span {
+  padding: 5px 2px 9px 10px;
+  background: #466434;
+  margin-right: 5px;
+}
+
+.et_pb_portfolio_grid .et_pb_portfolio_item .post-meta > span {
+  font-size: 18px;
 }
