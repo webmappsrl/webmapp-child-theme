@@ -61,11 +61,6 @@ header#main-header.et-fixed-header {
   color: white !important;
 }
 
-.et-fixed-header .logo_container {
-  max-height: 100%!important;
-  display: flex;
-}
-
 body.et_header_style_left #et-top-navigation {
   padding-left: 30px !important;
   padding-top: 20px;
