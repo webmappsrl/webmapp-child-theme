@@ -61,13 +61,6 @@ header#main-header.et-fixed-header {
   color: white !important;
 }
 
-.et_header_style_left .logo_container {
-  width: 15%;
-  max-width: 124px;
-  min-width: 92px;
-  height: auto;
-}
-
 .et-fixed-header .logo_container {
   max-height: 100%!important;
   display: flex;
