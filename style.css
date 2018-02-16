@@ -12,7 +12,7 @@ header#main-header.et-fixed-header {
   background: #fff;
 }
 
-.home #main-header, .archive #main-header, .single-route #page-container {
+.home #main-header, .archive #main-header, .single-route #main-header {
   background: transparent;
   box-shadow: none;
   -webkit-box-shadow: none;
