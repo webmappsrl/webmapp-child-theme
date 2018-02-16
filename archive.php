@@ -68,10 +68,20 @@
                                     </a>
 									<?php
 									$activities = get_the_terms( get_the_ID(), 'activity' );
-									if ( ! empty( $activities ) ) {
+									if ( !empty($activities) && count($activities) === 1 ) {
+										$icon = get_field('icon', $activities[0]->taxonomy . '_' . $activities[0]->term_id);
+										if (!empty($icon)){
+											echo '<div class="wm-activity"><span class="' . $icon . '"> </span> ' . $activities[0]->name . '</div>';
+										} else {
+											echo '<div class="wm-activity">' . $activities[0]->name . '</div>';
+										}
+
+									} else {
 										foreach ( $activities as $activity ) {
 											$icon = get_field( 'icon', $activity->taxonomy . '_' . $activity->term_id );
-											echo '<div class="wm-activities"><span class="' . $icon . '"> </span> ' . $activity->name . '</div>';
+											if ( ! empty( $icon ) ) {
+												echo '<div class="wm-activities"><span class="' . $icon . '"> </span></div>';
+											}
 										}
 									}
 									?>

@@ -898,7 +898,7 @@ body.single-project h1.entry-title {
   font-size: 16px;
 }
 
-.et_pb_portfolio_grid .et_pb_portfolio_item .wm-activities {
+.et_pb_portfolio_grid .et_pb_portfolio_item .wm-activity {
   margin-top: -35px;
   z-index: 999;
   position: relative;
@@ -908,10 +908,25 @@ body.single-project h1.entry-title {
   padding: 7px 10px 5px 0px;
 }
 
-.et_pb_portfolio_grid .et_pb_portfolio_item .wm-activities > span {
+.et_pb_portfolio_grid .et_pb_portfolio_item .wm-activity > span {
   padding: 10px 2px 10px 10px;
   background: #466434;
   margin-right: 5px;
+}
+
+
+.et_pb_portfolio_grid .et_pb_portfolio_item .wm-activities {
+  top: -27px;
+  z-index: 999;
+  position: relative;
+  color: #fff;
+  display: inline-block;
+}
+
+.et_pb_portfolio_grid .et_pb_portfolio_item .wm-activities > span {
+  padding: 10px;
+  background: #466434;
+  margin-right: 3px;
 }
 
 .et_pb_portfolio_grid .et_pb_portfolio_item .post-meta > span {
