@@ -12,13 +12,13 @@ header#main-header.et-fixed-header {
   background: #fff;
 }
 
-.home #main-header, .archive #main-header {
+.home #main-header, .archive #main-header, .single-route #page-container {
   background: transparent;
   box-shadow: none;
   -webkit-box-shadow: none;
 }
 
-.home #page-container, .archive #page-container {
+.home #page-container, .archive #page-container, .single-route #page-container {
   padding-top: 0!important;
 }
 
