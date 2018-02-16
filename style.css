@@ -12,6 +12,16 @@ header#main-header.et-fixed-header {
   background: #fff;
 }
 
+.home #main-header, .archive #main-header {
+  background: transparent;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+}
+
+.home #page-container, .archive #page-container {
+  padding-top: 0!important;
+}
+
 .et_pb_section.et_section_regular:not(.et_pb_fullwidth_section) {
   padding: 10px 0;
 }
@@ -908,16 +918,28 @@ body.single-project h1.entry-title {
   font-size: 18px;
 }
 
-.wm-list-terms h2 {
-  color: #2d2d37;
+.wm-list-terms h2, .wm-intro-tax h2 {
   font-size: 30px;
   font-weight: 700;
   margin-bottom: 5px;
 }
 
-.wm-list-terms p {
+.wm-list-terms h2 {
+  color: #2d2d37;
+}
+
+.wm-intro-tax h2 {
+  color: #466434;
+}
+
+.wm-list-terms p, .wm-intro-tax p {
   color: #57575f;
   font-size: 14px;
+}
+
+.wm-intro-tax p {
+  font-size: 16px;
+  line-height: 1.4;
 }
 
 .wm-list-terms ul.wm-terms {
@@ -951,4 +973,32 @@ body.single-project h1.entry-title {
 
 .et_pb_column.et-last-child {
   float: right;
+}
+
+.wm-featured-image {
+  width: 100%;
+  background-size: cover!important;
+  background-repeat: no-repeat!important;
+  height: 608px;
+}
+
+#main-content .wm-intro-tax.container {
+  padding-top: 20px;
+}
+
+.wm-intro-tax.container .wm-tax-icon {
+  margin-top: -61px;
+  z-index: 999;
+  position: relative;
+  background: rgba(70,100,52, 0.7);
+  color: #fff;
+  float: left;
+  font-size: 20px;
+  padding: 10px 10px 10px 0px;
+}
+
+.wm-intro-tax.container .wm-tax-icon > span {
+  padding: 10px 0px 10px 10px;
+  background: #466434;
+  margin-right: 8px;
 }

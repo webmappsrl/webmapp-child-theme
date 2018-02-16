@@ -1,6 +1,33 @@
 <?php get_header(); ?>
 
     <div id="main-content">
+        <?php if ( is_tax() ) :
+
+	        $tax = get_queried_object();
+	        $featured_image = get_field( 'featured_image', $tax->taxonomy . '_' . $tax->term_id );
+
+	        if ( !empty($featured_image) ) : ?>
+                <div class="wm-featured-image" style="background: url('<?php echo $featured_image['sizes']['et-pb-post-main-image-fullwidth']; ?>')"></div>
+    <?php   endif; ?>
+            <div class="container wm-intro-tax">
+                <?php
+                $icon = get_field('icon', $tax->taxonomy . '_' . $tax->term_id );
+                if (!empty($icon)){
+                    echo '<div class="wm-tax-icon"><span class="' . $icon . '"> </span> ' . $tax->name . '</div>';
+                }
+
+                $title = get_field( 'title', $tax->taxonomy . '_' . $tax->term_id );
+                $description = term_description(  $tax->term_id, $tax->taxonomy );
+
+                if ( !empty($title) ){
+                    echo '<h2>' . $title . '</h2>';
+                }
+                if ( !empty($description) ){
+                    echo $description;
+                } ?>
+            </div>
+        <?php endif; ?>
+
         <div class="container">
             <div id="content-area" class="clearfix">
                 <div class="et_pb_column">
