@@ -16,7 +16,8 @@
 									'et_pb_portfolio_item',
 								];
 								$a     = 0;
-								if ( empty( $post->post_thumbnail ) ) {
+								$post_thumbnail = get_the_post_thumbnail_url( $post->ID, array(510, 287));
+								if ( empty( $post_thumbnail ) ) {
 									$url_img = get_stylesheet_directory_uri() . '/img/placeholder.jpg';
 								} else {
 									$url_img = esc_url( $post->post_thumbnail );
