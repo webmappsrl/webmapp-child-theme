@@ -934,3 +934,7 @@ body.single-project h1.entry-title {
 .wm-list-terms ul.wm-terms li a {
   color: #466434;
 }
+
+.et_pb_column .et-last-child {
+  float: right;
+}
