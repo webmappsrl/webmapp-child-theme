@@ -68,7 +68,7 @@
 											foreach ( $themes as $theme ) {
 
 												$icon = get_field( 'icon', $theme->taxonomy . '_' . $theme->term_id );
-												echo ' <span class="' . $icon . '"></span> ';
+												echo ' <span title="' . $theme->name . '"  class="' . $icon . '"></span> ';
 											}
 										}
 										$who_terms = get_the_terms( get_the_ID(), 'who' );
@@ -76,7 +76,7 @@
 											foreach ( $who_terms as $who ) {
 
 												$icon = get_field( 'icon', $who->taxonomy . '_' . $who->term_id );
-												echo ' <span class="' . $icon . '"></span> ';
+												echo ' <span title="' . $who->name . '"  class="' . $icon . '"></span> ';
 											}
 										}
 										$seasons = get_the_terms( get_the_ID(), 'when' );
@@ -84,7 +84,7 @@
 											foreach ( $seasons as $season ) {
 
 												$icon = get_field( 'icon', $season->taxonomy . '_' . $season->term_id );
-												echo ' <span class="' . $icon . '"></span> ';
+												echo ' <span title="' . $season->name . '"  class="' . $icon . '"></span> ';
 											}
 										}
 
