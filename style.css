@@ -848,6 +848,11 @@ body.single-project h1.entry-title {
 
 /* Griglia responsive per modulo webmapp */
 
+.archive .et_pb_column {
+  width: 100%;
+  margin: 0;
+}
+
 .et_pb_column .et_pb_portfolio_grid .wm-column-1 {
   width: 100%;
   clear: both;
@@ -860,6 +865,15 @@ body.single-project h1.entry-title {
 }
 
 .et_pb_column .et_pb_portfolio_grid .wm-column-2:nth-child(even){
+  margin-right: 0;
+}
+
+.et_pb_column .et_pb_portfolio_grid .wm-column-3 {
+  width: 30%;
+  margin: 0 3.5% 40px 0;
+}
+
+.et_pb_column .et_pb_portfolio_grid .wm-column-3:nth-child(3n){
   margin-right: 0;
 }
 
@@ -935,6 +949,6 @@ body.single-project h1.entry-title {
   color: #466434;
 }
 
-.et_pb_column .et-last-child {
+.et_pb_column.et-last-child {
   float: right;
 }
