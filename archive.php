@@ -15,12 +15,12 @@
 									'et_pb_grid_item',
 									'et_pb_portfolio_item',
 								];
-								$a     = 0;
+
 								$post_thumbnail = get_the_post_thumbnail_url( $post->ID, array(510, 287));
 								if ( empty( $post_thumbnail ) ) {
 									$url_img = get_stylesheet_directory_uri() . '/img/placeholder.jpg';
 								} else {
-									$url_img = esc_url( $post->post_thumbnail );
+									$url_img = esc_url( $post_thumbnail );
 								}
 								?>
 
