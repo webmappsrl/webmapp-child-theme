@@ -997,8 +997,8 @@ body.single-project h1.entry-title {
   height: 608px;
 }
 
-#main-content .wm-intro-tax.container {
-  padding-top: 20px;
+#main-content .wm-intro-tax.container, .single-route .container {
+  padding-top: 20px!important;
 }
 
 .wm-intro-tax.container .wm-tax-icon {

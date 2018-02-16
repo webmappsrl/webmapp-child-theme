@@ -1,8 +1,13 @@
 <?php
 get_header();
+global $post;
 ?>
     <div id="main-content">
+        <?php $featured_image = get_the_post_thumbnail_url( $post->ID, 'et-pb-post-main-image-fullwidth');
 
+        if ( !empty($featured_image) ) : ?>
+            <div class="wm-featured-image" style="background: url('<?php echo $featured_image; ?>')"></div>
+        <?php   endif; ?>
         <div id="content-area" class="clearfix">
 			<?php while ( have_posts() ) : the_post(); ?>
                 <article

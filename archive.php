@@ -73,14 +73,14 @@
 										if (!empty($icon)){
 											echo '<div class="wm-activity"><span class="' . $icon . '"> </span> ' . $activities[0]->name . '</div>';
 										} else {
-											echo '<div class="wm-activity">' . $activities[0]->name . '</div>';
+											echo '<div title="' . $activities[0]->name . '" class="wm-activity">' . $activities[0]->name . '</div>';
 										}
 
 									} else {
 										foreach ( $activities as $activity ) {
 											$icon = get_field( 'icon', $activity->taxonomy . '_' . $activity->term_id );
 											if ( ! empty( $icon ) ) {
-												echo '<div class="wm-activities"><span class="' . $icon . '"> </span></div>';
+												echo '<div title="' . $activity->name . '" class="wm-activities"><span class="' . $icon . '"> </span></div>';
 											}
 										}
 									}
