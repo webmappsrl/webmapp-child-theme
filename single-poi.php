@@ -5,7 +5,7 @@ get_header();
 
         <div id="content-area" class="clearfix">
 			<?php while ( have_posts() ) : the_post();
-    				$terms = get_the_terms(the_ID(), 'webmapp_category');
+    				$terms = get_the_terms(get_the_ID(), 'webmapp_category');
 			?>
 
                 <article
