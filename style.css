@@ -810,6 +810,15 @@ body.single-project h1.entry-title {
 
 @media screen and (max-width: 770px) {
 
+  .et_fixed_nav #main-header {
+    position: static;
+  }
+
+  #main-header.et-fixed-header{
+    position: fixed;
+  }
+
+
   .back-green .single-right, .back-green .single-left{
     width: 100%!important;
     padding-left: 0;
