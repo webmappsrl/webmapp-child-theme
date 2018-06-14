@@ -12,13 +12,13 @@ function Divi_parent_theme_enqueue_styles() {
 	wp_localize_script( 'webmapp-theme_functions', 'ajax_object', [ 'ajax_url' => admin_url( 'admin-ajax.php' ) ] );
 }
 
-function DS_Custom_Modules() {
+function WM_Custom_Modules() {
 	if ( class_exists( "ET_Builder_Module" ) ) {
 		include( "include/webmapp-custom-modules.php" );
 	}
 }
 
-function Prep_DS_Custom_Modules() {
+function Prep_WM_Custom_Modules() {
 	global $pagenow;
 
 	$is_admin                     = is_admin();
@@ -44,11 +44,12 @@ function Prep_DS_Custom_Modules() {
 	$is_edit_layout_category_page = 'edit-tags.php' === $pagenow && isset( $_GET['taxonomy'] ) && 'layout_category' === $_GET['taxonomy'];
 
 	if ( ! $is_admin || ( $is_admin && in_array( $pagenow, $required_admin_pages ) && ( ! in_array( $pagenow, $specific_filter_pages ) || $is_edit_library_page || $is_role_editor_page || $is_edit_layout_category_page || $is_import_page ) ) ) {
-		add_action( $action_hook, 'DS_Custom_Modules', 9789 );
+		add_action( $action_hook, 'WM_Custom_Modules', 9789 );
 	}
 }
 
-Prep_DS_Custom_Modules();
+Prep_WM_Custom_Modules();
+
 
 function et_divi_get_top_nav_items() {
 	$items = new stdClass;
@@ -83,11 +84,34 @@ if ( function_exists( 'add_image_size' ) ) {
 	add_image_size( 'photogallery', 350, 240, TRUE );
 }
 
+
+if ( function_exists( 'add_image_size' ) ) {
+	add_image_size( 'portfolio-size', 800, 400, TRUE );
+	add_image_size( 'photogallery', 350, 240, TRUE );
+}
+
 function containsTerm( $myArray, $word ) {
 	foreach ( $myArray as $element ) {
 		if ( $element->slug == $word ) {
 			return TRUE;
 		}
 	}
+
 	return FALSE;
+}
+
+add_action( 'pre_get_posts', 'only_current' );
+function only_current( $query ) {
+
+	if ( is_admin() ) {
+		return;
+	}
+
+	if ( ! $query->is_main_query() ) {
+		return;
+	}
+
+	if ( ! is_post_type_archive( 'webmapp_category' ) ) {
+		return;
+	}
 }
