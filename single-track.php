@@ -35,9 +35,11 @@ get_header();
                     </div>
                     <div class="single-right">
                         <div class="iframe">
-		                    <?php $geojson = get_field('n7webmap_geojson');
+                            <?php 
+                            //$geojson = get_field('n7webmap_geojson');
+                            $geojson = maybe_unserialize(get_field('n7webmap_geojson'));
 		                    if(!empty($geojson)):?>
-                                <div id="custom-track-map" data-id="<?php echo get_the_ID(); ?>" data-geojson='<?php echo json_encode($geojson); ?>'></div>
+                                <div id="custom-track-map" data-geojson='<?php echo json_encode($geojson); ?>' data-id='<?php the_ID(); ?>'></div>
 		                    <?php endif; ?>
                         </div>
                         <!-- <div class="mappa" style="background: url('/wp-content/themes/webmapp-child-theme/img/mappa.jpg')"> -->
